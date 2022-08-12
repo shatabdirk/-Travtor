@@ -29,7 +29,6 @@ export class CarSearchComponent implements OnInit {
   }
 
   submit() {
-    console.log(this.carSearchFrom.getRawValue());
     this.carService.setSearchInfo(this.carSearchFrom.getRawValue());
     this.router.navigate(['/car-list'])
   }

@@ -7,7 +7,7 @@ import { ErrorPageComponent } from "./error-page/error-page.component";
 const route:Route[] = [
     {
         path: '',
-        redirectTo: 'car-list',
+        redirectTo: 'car-search',
         pathMatch:'full'
     }, {
         path: 'car-search',

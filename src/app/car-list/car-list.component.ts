@@ -21,9 +21,7 @@ export class CarListComponent implements OnInit {
   openDialog(): void {
     const dialogRef = this.dialog.open(FilterComponent, {data: {sorting: this.sorting}});
     dialogRef.afterClosed().subscribe(result => {
-      console.log('The dialog was closed', result);
       this.carList = this.carService.filterList(result);
-      console.log(this.carList)
       this.sorting = result;
     });
   }

@@ -20,8 +20,7 @@ export class TabComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  action(event: MatTabChangeEvent) {
-    console.log(event);
+  action(event: any) {
     this.tabclick.emit(this.tabList[event.index]);
   }
 

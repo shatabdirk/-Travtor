@@ -1,3 +1,4 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SearchDetailsComponent } from './search-details.component';
@@ -8,7 +9,8 @@ describe('SearchDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SearchDetailsComponent ]
+      declarations: [ SearchDetailsComponent ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA]
     })
     .compileComponents();
   });
@@ -16,6 +18,7 @@ describe('SearchDetailsComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SearchDetailsComponent);
     component = fixture.componentInstance;
+    component.searchInfo = {"location":"zds","fromDate":"2022-08-03T18:30:00.000Z","toDate":"2022-08-03T18:30:00.000Z","fromTime":"02:13","toTime":"02:14","driverAge":"22"}
     fixture.detectChanges();
   });
 
