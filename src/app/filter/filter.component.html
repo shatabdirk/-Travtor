@@ -1,0 +1,28 @@
+<h1 mat-dialog-title>Sort</h1>
+    <mat-radio-group
+    aria-labelledby="example-radio-group-label"
+    class="example-radio-group"
+    [(ngModel)]="data.sorting"
+    color="primary">
+    <mat-radio-button class="example-radio-button"  value="lowest" (click)="dialogRef.close('lowest')">
+        Price:Lowest
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button"  value="highest" (click)="dialogRef.close('highest')">
+        Price:Highest
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button"  value="rentalAscending" (click)="dialogRef.close('rentalAscending')">
+       Rental company: A to z
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button"  value="rentalDesc" (click)="dialogRef.close('rentalDesc')">
+        Rental company: z to A
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button"  value="typeAsc" (click)="dialogRef.close('typeAsc')">
+        Car Type: A to Z
+    </mat-radio-button>
+    <mat-radio-button class="example-radio-button"  value="typeDesc" (click)="dialogRef.close('typeDesc')">
+        Car Type: Z to A
+    </mat-radio-button>
+    </mat-radio-group>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>

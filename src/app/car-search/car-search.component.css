@@ -1,0 +1,22 @@
+/* .car-search{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+} */
+
+.car-search .car-search-card{
+    min-width: 50%;
+}
+
+.flexible {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.flex-auto {
+    flex: auto;
+}
+.width-100 {
+    width: 100%;
+}

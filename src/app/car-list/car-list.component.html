@@ -1,0 +1,45 @@
+<mat-card><span class="gray-clr">{{carList.length}} cars found</span></mat-card>
+
+<div class="car-list">
+    <mat-card class="car-card"  *ngFor="let car of carList">
+        <mat-card-content>
+            <img mat-card-md-image [src]=car.vehicle.image />
+            <div class="car-details">
+                <p class="car-details-title">
+                  <strong> {{car.vehicle.type}} </strong>
+                </p>
+                <p>
+                    {{car.vehicle.name}}
+                </p>
+                <p class="additional-info">
+                    <span>
+                        <mat-icon>group</mat-icon> {{car.vehicle.specifications.passengerCapacity}}
+                    </span>
+                    <span>
+                        <mat-icon>shopping_bag</mat-icon> {{car.vehicle.specifications.baggageCapacity}}
+                    </span>
+
+                    <span *ngIf="car.unlimitedMileage">
+                        <mat-icon>speed</mat-icon> Unlimited Miles
+                    </span>
+                </p>
+            </div>
+        </mat-card-content>
+        <p>
+            <ng-container *ngIf="!car.cancellationDetails.isCancellationFree else freeCancellation">
+                Cancellation fees may apply
+            </ng-container>
+            <ng-template #freeCancellation>
+                <span class="free-color"> Free cancellation </span> until {{car.cancellationDetails.freeCancellationEndDate | date}}
+            </ng-template>
+        </p>
+        <mat-divider [inset]="true"></mat-divider>
+            <p class="card-footer gray-clr"><strong>{{car.fare.perDay | currency: 'USD'}}</strong> <small>avg/day</small> </p>
+            <p><span class="gray-clr"> Total(23 days):</span> <strong>{{car.fare.totalAmount | currency: 'USD'}}</strong></p>
+      </mat-card>
+</div>
+
+<div class="footer">
+    <button  mat-raised-button (click)="openDialog()">Sort</button>
+    <button  mat-raised-button (click)="openDialog()">Filter</button>
+</div>

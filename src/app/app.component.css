@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background-color: #f5f6f8;
+}
+
+app-car-list {
+    width: 50%;
+}

@@ -1,0 +1,9 @@
+<app-top-bar></app-top-bar>
+<app-tab (tabclick)="tabclickListenr($event)" [tabList]="tabList" *ngIf="!searchInfo else details"></app-tab>
+<ng-template #details>
+    <app-search-details [searchInfo]="searchInfo"></app-search-details>
+</ng-template>
+<main class="container">
+    <router-outlet>
+    </router-outlet>
+</main>
