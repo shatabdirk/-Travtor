@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4112285260755037567" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>group<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="INTERPOLATION" equiv-text="{{car.vehicle.specifications.passengerCapacity}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4167584113287143198" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>shopping_bag<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="INTERPOLATION" equiv-text="{{car.vehicle.specifications.baggageCapacity}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="467152036277488288" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon&gt;"/>speed<x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> Unlimited Miles </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6249272209935166611" datatype="html">
+        <source><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;!car.cancellationDetails.isCancellationFree else freeCancellation&quot;&gt;"/> Cancellation fees may apply <x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="START_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;ng-template #freeCancellation&gt;"/><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;free-color&quot;&gt;"/> Free cancellation <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> until <x id="INTERPOLATION" equiv-text="{{car.cancellationDetails.freeCancellationEndDate | date}}"/> <x id="CLOSE_TAG_NG_TEMPLATE" ctype="x-ng_template" equiv-text="&lt;/ng-template&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">29,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8961076622797363725" datatype="html">
+        <source><x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong &gt;"/><x id="INTERPOLATION" equiv-text="{{car.fare.perDay | currency: &apos;USD&apos;}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/><x id="START_SMALL_TEXT" ctype="x-small" equiv-text="&lt;small&gt;"/>avg/day<x id="CLOSE_SMALL_TEXT" ctype="x-small" equiv-text="&lt;/small&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8008843943716989994" datatype="html">
+        <source> Total(23 days):</source>
+        <target>Total (23 días):</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5146398958364876914" datatype="html">
+        <source>Sort</source>
+        <target>Clasificar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8829497237648100098" datatype="html">
+        <source>Filter</source>
+        <target>Filtrar</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-list/car-list.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8669443298564714234" datatype="html">
+        <source>PICK UP LOCATION</source>
+        <target>LUGAR DE RECOGIDA</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-search/car-search.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3632713535284459395" datatype="html">
+        <source>AGE OF DRIVER</source>
+         <target>EDAD DEL CONDUCTOR</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-search/car-search.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7169514370885761910" datatype="html">
+        <source>Search Rental Car</source>
+         <target>Buscar coche de alquiler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-search/car-search.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="748140146663539567" datatype="html">
+        <source>¡La página de error funciona!</source>
+        <target>Buscar coche de alquiler</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/error-page/error-page.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7756050544780535986" datatype="html">
+        <source> Price:Lowest </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">7,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3350608270451442638" datatype="html">
+        <source> Price:Highest </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">10,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7981408956858325026" datatype="html">
+        <source> Rental company: A to z </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="775386469656347959" datatype="html">
+        <source> Rental company: z to A </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">16,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8593030972781587423" datatype="html">
+        <source> Car Type: A to Z </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6313894743778714575" datatype="html">
+        <source> Car Type: Z to A </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/filter/filter.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7708270344948043036" datatype="html">
+        <source> <x id="INTERPOLATION" equiv-text="{{searchInfo.location}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/search-details/search-details.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4071377376054753380" datatype="html">
+        <source><x id="START_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;mat-icon &gt;"/><x id="INTERPOLATION" equiv-text="{{tab.iconName}}"/><x id="CLOSE_TAG_MAT_ICON" ctype="x-mat_icon" equiv-text="&lt;/mat-icon&gt;"/> <x id="INTERPOLATION_1" equiv-text="{{tab.lable}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/tab/tab.component.html</context>
+          <context context-type="linenumber">5,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1924693304138806300" datatype="html">
+        <source>Travtor</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/top-bar/top-bar.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

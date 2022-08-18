@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -26,6 +26,28 @@ import {MatDividerModule} from '@angular/material/divider';
 import { FilterComponent } from './filter/filter.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatRadioModule} from '@angular/material/radio';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { catchError, of } from 'rxjs';
+
+export function initApp(http: HttpClient, translate: TranslateService) {
+  return () => new Promise<boolean>((resolve: (res: boolean) => void) => {
+
+    const defaultLocale = 'es';
+
+    http.get(`/assets/i18n/es-PR.json`).pipe(
+      catchError(() => of(null))
+    ).subscribe((devKeys: any) => {
+      translate.setTranslation(defaultLocale, devKeys || {});
+
+      translate.setDefaultLang(defaultLocale);
+      translate.use(defaultLocale);
+
+      resolve(true);
+    });
+  });
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -56,9 +78,16 @@ import {MatRadioModule} from '@angular/material/radio';
     ReactiveFormsModule,
     MatDividerModule,
     MatDialogModule,
-    MatRadioModule
+    MatRadioModule,
+    TranslateModule.forRoot(),
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{
+    provide: APP_INITIALIZER,
+    useFactory: initApp,
+    deps: [HttpClient, TranslateService],
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

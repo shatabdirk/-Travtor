@@ -12,20 +12,20 @@
                     {{car.vehicle.name}}
                 </p>
                 <p class="additional-info">
-                    <span>
+                    <span i18n>
                         <mat-icon>group</mat-icon> {{car.vehicle.specifications.passengerCapacity}}
                     </span>
-                    <span>
+                    <span i18n>
                         <mat-icon>shopping_bag</mat-icon> {{car.vehicle.specifications.baggageCapacity}}
                     </span>
 
-                    <span *ngIf="car.unlimitedMileage">
+                    <span *ngIf="car.unlimitedMileage" i18n>
                         <mat-icon>speed</mat-icon> Unlimited Miles
                     </span>
                 </p>
             </div>
         </mat-card-content>
-        <p>
+        <p i18n>
             <ng-container *ngIf="!car.cancellationDetails.isCancellationFree else freeCancellation">
                 Cancellation fees may apply
             </ng-container>
@@ -34,12 +34,12 @@
             </ng-template>
         </p>
         <mat-divider [inset]="true"></mat-divider>
-            <p class="card-footer gray-clr"><strong>{{car.fare.perDay | currency: 'USD'}}</strong> <small>avg/day</small> </p>
-            <p><span class="gray-clr"> Total(23 days):</span> <strong>{{car.fare.totalAmount | currency: 'USD'}}</strong></p>
+            <p class="card-footer gray-clr" i18n><strong >{{car.fare.perDay | currency: 'USD'}}</strong> <small>avg/day</small> </p>
+            <p><span class="gray-clr" i18n> Total(23 days):</span> <strong >{{car.fare.totalAmount | currency}}</strong></p>
       </mat-card>
 </div>
 
 <div class="footer">
-    <button  mat-raised-button (click)="openDialog()">Sort</button>
-    <button  mat-raised-button (click)="openDialog()">Filter</button>
+    <button  mat-raised-button (click)="openDialog()" i18n>Sort</button>
+    <button  mat-raised-button (click)="openDialog()" i18n>Filter</button>
 </div>

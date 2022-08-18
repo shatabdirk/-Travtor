@@ -7,6 +7,10 @@
   "newProjectRoot": "projects",
   "projects": {
     "travtor": {
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {"es-PR": "src/locale/messages.es.xlf"}
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,6 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": ["es-PR"],
             "outputPath": "dist/travtor",
             "index": "src/index.html",
             "main": "src/main.ts",

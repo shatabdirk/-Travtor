@@ -12,22 +12,22 @@ export class AppComponent implements OnInit, OnDestroy {
   title = 'travtor';
   tabList: TabConfig[] = [
     {
-      lable: 'Car',
+      lable: 'tab.Car',
       iconName: 'local_taxi',
       emitValue: 'car-search',
     },
     {
-      lable: 'Flight',
+      lable: 'tab.Flight',
       iconName: 'flight',
       emitValue: 'flight-search',
     },
     {
-      lable: 'Hotels',
+      lable: 'tab.Hotels',
       iconName: 'hotel',
       emitValue: 'hotle-search',
     },
     {
-      lable: 'Cruises',
+      lable: 'tab.Cruises',
       iconName: 'directions_boat',
       emitValue: 'cruise-search',
     },

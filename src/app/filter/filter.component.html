@@ -1,25 +1,25 @@
-<h1 mat-dialog-title>Sort</h1>
+<h1 mat-dialog-title i18n>Sort</h1>
     <mat-radio-group
     aria-labelledby="example-radio-group-label"
     class="example-radio-group"
     [(ngModel)]="data.sorting"
     color="primary">
-    <mat-radio-button class="example-radio-button"  value="lowest" (click)="dialogRef.close('lowest')">
+    <mat-radio-button class="example-radio-button"  value="lowest" (click)="dialogRef.close('lowest')" i18n>
         Price:Lowest
     </mat-radio-button>
-    <mat-radio-button class="example-radio-button"  value="highest" (click)="dialogRef.close('highest')">
+    <mat-radio-button class="example-radio-button"  value="highest" (click)="dialogRef.close('highest')" i18n>
         Price:Highest
     </mat-radio-button>
-    <mat-radio-button class="example-radio-button"  value="rentalAscending" (click)="dialogRef.close('rentalAscending')">
+    <mat-radio-button class="example-radio-button"  value="rentalAscending" (click)="dialogRef.close('rentalAscending')" i18n>
        Rental company: A to z
     </mat-radio-button>
-    <mat-radio-button class="example-radio-button"  value="rentalDesc" (click)="dialogRef.close('rentalDesc')">
+    <mat-radio-button class="example-radio-button"  value="rentalDesc" (click)="dialogRef.close('rentalDesc')" i18n>
         Rental company: z to A
     </mat-radio-button>
-    <mat-radio-button class="example-radio-button"  value="typeAsc" (click)="dialogRef.close('typeAsc')">
+    <mat-radio-button class="example-radio-button"  value="typeAsc" (click)="dialogRef.close('typeAsc')" i18n>
         Car Type: A to Z
     </mat-radio-button>
-    <mat-radio-button class="example-radio-button"  value="typeDesc" (click)="dialogRef.close('typeDesc')">
+    <mat-radio-button class="example-radio-button"  value="typeDesc" (click)="dialogRef.close('typeDesc')" i18n>
         Car Type: Z to A
     </mat-radio-button>
     </mat-radio-group>

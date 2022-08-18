@@ -3,19 +3,19 @@
         <mat-card-content>
             <form [formGroup]="carSearchFrom" (ngSubmit)="submit()">
                 <mat-form-field class="width-100" appearance="fill">
-                    <mat-label>PICK UP LOCATION</mat-label>
+                    <mat-label i18n>PICK UP LOCATION</mat-label>
                     <input matInput placeholder="Ex.LAX-All Airport-Los Angeles" formControlName="location">
                 </mat-form-field>
                 <div class="width-100 flexible">
                     <mat-form-field appearance="fill" class="flex-auto">
-                        <mat-label>PICK-UP DATE</mat-label>
+                        <mat-label i18n>PICK-UP DATE</mat-label>
                         <input matInput [matDatepicker]="picker3" [disabled]="true" formControlName="fromDate">
                         <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
                         <mat-datepicker #picker3 disabled="false"></mat-datepicker>
                     </mat-form-field>
                       
                       <mat-form-field appearance="fill" class="flex-auto">
-                        <mat-label>DROP-OFF DATE</mat-label>
+                        <mat-label i18n>DROP-OFF DATE</mat-label>
                         <input matInput [matDatepicker]="picker4"  formControlName="toDate" [disabled]="true">
                         <mat-datepicker-toggle matSuffix [for]="picker4"></mat-datepicker-toggle>
                         <mat-datepicker #picker4 disabled="false"></mat-datepicker>
@@ -36,12 +36,12 @@
 
 
                   <mat-form-field appearance="fill" class="width-100">
-                    <mat-label>AGE OF DRIVER</mat-label>
+                    <mat-label i18n>AGE OF DRIVER</mat-label>
                     <mat-select formControlName="driverAge">
                       <mat-option *ngFor="let age of diverAgerList" [value]="age">{{age}}</mat-option>
                     </mat-select>
                   </mat-form-field>
-                  <button type="submit" [disabled]="!carSearchFrom.valid" mat-raised-button color="accent">Search Rental Car</button>
+                  <button type="submit" [disabled]="!carSearchFrom.valid" mat-raised-button color="accent" i18n>Search Rental Car</button>
             </form>
           </mat-card-content>
     </mat-card>
