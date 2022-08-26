@@ -57,10 +57,26 @@ mat-icon {
 .footer { 
     position: fixed;
     bottom: 10px;
-    left: 30%;
+    left: 50%;
 }
 
 .footer button{
     border-radius: 0px;
     color: #3f51b5;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        position: fixed;
+        bottom: 10px;
+        left: 25%;
+    }
 }
