@@ -69,6 +69,20 @@
           <context context-type="linenumber">6</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="4031421722931699805" datatype="html">
+        <source>PICK-UP DATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-search/car-search.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7758864230335290875" datatype="html">
+        <source>DROP-OFF DATE</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/car-search/car-search.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="3632713535284459395" datatype="html">
         <source>AGE OF DRIVER</source>
         <context-group purpose="location">
